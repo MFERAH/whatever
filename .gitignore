@@ -1,1 +1,3 @@
 ./.idea
+/render_core/build
+*.kdev4
