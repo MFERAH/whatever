@@ -10,4 +10,3 @@ def conv_2d(in_channels, out_channels,
             dilation=1, groups=1, bias=True):
     nn.Conv2d()
 
-def
