@@ -1,5 +1,5 @@
-/render_core/build
+/render_core/build/
 *.kdev4
 /.vs
-/render_core/out/build/x64-Debug
+/render_core/out/build/
 /.idea
