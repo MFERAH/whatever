@@ -3,3 +3,4 @@
 /.vs
 /render_core/out/build/
 /.idea
+/nn_tools/example/MNIST/
