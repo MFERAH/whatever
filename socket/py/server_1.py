@@ -7,9 +7,12 @@ def auto_reply():
         for c, a in lis:
             data = c.recv(1024)
             if not data:
-                continue
-                lis.remove((c, a))
                 c.close()
+                print("connection broken!")
+                lis.remove((c, a))
+                continue
+
+
             print("[ip:", a[0], "port:", str(a[1]) + "]", ">>", data.decode("UTF-8"))
             c.sendall(data + b" [auto reply]")
 
