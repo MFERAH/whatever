@@ -4,3 +4,6 @@
 /render_core/out/build/
 /.idea
 /nn_tools/example/MNIST/
+/socket/.vs
+/socket/cpp/out/build
+/socket/out/build/x64-Debug
