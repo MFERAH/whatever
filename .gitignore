@@ -3,6 +3,5 @@
 /.vs
 /render_core/out/build/x64-Debug
 /.idea
-
 /socket/.vs
 /socket/cpp/out/build
