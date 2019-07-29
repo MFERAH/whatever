@@ -4,10 +4,12 @@ import threading
 
 def auto_reply():
     while 1:
-        for c,a in lis:
+        for c, a in lis:
             data = c.recv(1024)
             if not data:
-                break
+                continue
+                lis.remove((c, a))
+                c.close()
             print("[ip:", a[0], "port:", str(a[1]) + "]", ">>", data.decode("UTF-8"))
             c.sendall(data + b" [auto reply]")
 
