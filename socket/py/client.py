@@ -11,5 +11,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         if data:
             print("received >>", data.decode("UTF-8"))
         time.sleep(0.5)
-    s.shutdown(flag=SHUT_RDWR)
+    s.shutdown(socket.SHUT_RDWR)
     s.close()
