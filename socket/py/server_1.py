@@ -4,9 +4,7 @@ import threading
 
 def auto_reply():
     while 1:
-        for p in lis:
-            c = p[0]
-            a = p[1]
+        for c,a in lis:
             data = c.recv(1024)
             if not data:
                 break

@@ -26,7 +26,7 @@ int main(int argc, char** argv)
 
 
 	boost::system::error_code ec;
-	for (int i = 0; true; i++)
+	for (int i = 0; i < 20; i++)
 	{
 
 		//request
