@@ -1,6 +1,6 @@
 {
   "module_name": "My_fc",
-  "description": "A 4 Layer Full Connect(LeakyReLu) MNIST module by HUGEST LIU",
+  "description": "A 4 Layer Full Connect(LeakyReLu) MNIST module by HUGEST HU",
   "layers":[
     {
       "in":"INPUT",
