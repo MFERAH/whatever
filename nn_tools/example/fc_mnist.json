@@ -1,18 +1,47 @@
 {
   "module_name": "My_fc",
-  "description": "4 Layer Full Connect MNIST MODULE",
+  "description": "A 4 Layer Full Connect(LeakyReLu) MNIST module by HUGEST LIU",
   "layers":[
     {
-      
+      "in":"INPUT",
+      "identifier": "fc1",
+      "module":{
+        "type":"Linear",
+        "parameter":[784,500]
+      },
+      "activation":{
+        "type":"LeakyReLU"
+      }
     },
     {
-
+        "in":"fc1",
+        "identifier":"fc2",
+        "module":{
+          "type":"Linear",
+          "parameter":[500,200]
+        },
+        "activation":{
+          "type":"LeakyReLU"
+        }
     },
     {
-
+        "in":"fc2",
+        "identifier":"fc3",
+        "module":{
+          "type":"Linear",
+          "parameter":[200,50]
+        },
+        "activation":{
+          "type":"LeakyReLU"
+        }
     },
     {
-      
+        "in":"fc3",
+        "identifier":"fc4",
+        "module":{
+          "type":"Linear",
+          "parameter":[50,10]
+        }
     }
   ]
   
