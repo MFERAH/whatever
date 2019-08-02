@@ -4,3 +4,7 @@
 /render_core/out/build/
 /.idea
 /nn_tools/example/MNIST/
+/socket/.vs
+/socket/cpp/out/build/x64-Debug
+/MNIST
+/socket/cpp/CMakeSettings.json
