@@ -1,5 +1,20 @@
 {
-  "name": "what ever",
-  "description": "idk wtf is this",
-  "path_to_snippet" :  "./none_exist"
+  "module_name": "My_fc",
+  "description": "4 Layer Full Connect MNIST MODULE",
+  "layers":[
+    {
+      
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+      
+    }
+  ]
+  
+  
 }
