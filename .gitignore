@@ -8,3 +8,5 @@
 /socket/cpp/out/build/x64-Debug
 /MNIST
 /socket/cpp/CMakeSettings.json
+.vscode/settings.json
+UI/.vscode/settings.json

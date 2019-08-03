@@ -9,10 +9,10 @@ import torchvision.transforms as transforms
 class My_fc(nn.Module):
     def __init__(self):
         super().__init__()
-        self.fc1 = t.nn.Sequential(t.nn.Linear(784, 500), t.nn.LeakyReLU())
-        self.fc2 = t.nn.Sequential(t.nn.Linear(500, 200), t.nn.LeakyReLU())
-        self.fc3 = t.nn.Sequential(t.nn.Linear(200, 50), t.nn.LeakyReLU())
-        self.fc4 = t.nn.Linear(50, 10)
+        self.fc1 = nn.Sequential(nn.Linear(784, 500), nn.LeakyReLU())
+        self.fc2 = nn.Sequential(nn.Linear(500, 200), nn.LeakyReLU())
+        self.fc3 = nn.Sequential(nn.Linear(200, 50), nn.LeakyReLU())
+        self.fc4 = nn.Linear(50, 10)
 
     def forward(self, x):
         x = self.fc1(x)

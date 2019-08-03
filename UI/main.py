@@ -1,11 +1,17 @@
+import sys
 from PySide2.QtWidgets import QApplication
-from PySide2.QtQuick import QQuickView
-from PySide2.QtCore import QUrl
+from PySide2.QtCore import Qt, QCoreApplication
+from PySide2.QtQml import QQmlApplicationEngine
 
-app = QApplication([])
-view = QQuickView()
-url = QUrl("main_form.qml")
+if __name__ == '__main__':
 
-view.setSource(url)
-view.show()
-app.exec_()
+    app = QApplication(sys.argv)
+
+    QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
+    QCoreApplication.setAttribute(Qt.AA_UseHighDpiPixmaps)
+
+    engine = QQmlApplicationEngine()
+    engine.load('./main_form.qml')
+    engine.rootObjects()[0].show()
+
+    sys.exit(app.exec_())
