@@ -1,4 +1,4 @@
-import torch as t
+simport torch as t
 import torch.nn as nn
 import torchvision.datasets
 import torch.utils.data.dataloader
@@ -9,10 +9,10 @@ from additional_part import Conv2d
 class My_fc(nn.Module):
     def __init__(self):
         super().__init__()
-        self.fc1 = nn.Sequential(Linear((784, 500)), LeakyReLU())
-        self.fc2 = nn.Sequential(Linear((500, 200)), LeakyReLU())
-        self.fc3 = nn.Sequential(Linear((200, 50)), LeakyReLU())
-        self.fc4 = nn.Sequential(Linear((50, 10)))
+        self.fc1 = nn.Sequential(nn.Linear(784, 500), nn.LeakyReLU())
+        self.fc2 = nn.Sequential(nn.Linear(500, 200), nn.LeakyReLU())
+        self.fc3 = nn.Sequential(nn.Linear(200, 50), nn.LeakyReLU())
+        self.fc4 = nn.Sequential(nn.Linear(50, 10))
 
             
     def forward(self, INPUT):

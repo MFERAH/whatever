@@ -14,8 +14,8 @@ def generate_init_snippet(layers, tabs = 8, tab_character = " "):
         init_snippet += "{tabs}self.{identifier} = nn.Sequential({type}{activation})\n".format(
             tabs = tabs * tab_character,
             identifier = single_layer["identifier"],
-            type = module["type"] + ("({})".format(module["parameter"]).replace("[","(").replace("]",")") if "parameter" in module.keys() else "()"),
-            activation = (", " + activation["type"] + ("({})".format(activation["parameter"].replace("[","(").replace("]",")") if "parameter" in activation.keys() else ""))) if activation != None else ""
+            type = "nn." + module["type"] + ("({})".format(module["parameter"]).replace("[","").replace("]","") if "parameter" in module.keys() else ""),
+            activation = (", nn." + activation["type"] + ("({})".format(activation["parameter"].replace("[","").replace("]","") if "parameter" in activation.keys() else ""))) if activation != None else ""
         )
     return init_snippet
 
