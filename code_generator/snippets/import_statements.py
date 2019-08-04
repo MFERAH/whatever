@@ -1,4 +1,4 @@
-import_statements = r"""simport torch as t
+import_statements = r"""import torch as t
 import torch.nn as nn
 import torchvision.datasets
 import torch.utils.data.dataloader

@@ -1,0 +1,30 @@
+{
+  "module_name": "simple_conv",
+  "description": "A Simple Conv2d Network",
+  "layers":[
+    {
+      "in":"INPUT",
+      "identifier": "conv1",
+      "module":{
+        "type":"Conv2d",
+        "parameter":[1,20,5]
+      },
+      "activation":{
+        "type":"LeakyReLU"
+      }
+    },
+    {
+        "in":"conv1",
+        "identifier":"conv2",
+        "module":{
+          "type":"Conv2d",
+          "parameter":[20,20,5]
+        },
+        "activation":{
+          "type":"LeakyReLU"
+        }
+    } 
+  ],
+  "output_identifier":"conv2"
+  
+}
