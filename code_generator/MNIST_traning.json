@@ -1,0 +1,16 @@
+{
+    "dataset_name":"MNIST",
+    "root_directory":"./",//optional
+    "batch_size":"",
+    "shuffle":true,
+    "optimizer":{
+        "type":"t.optim.Adma",
+        "parameter":{
+            "lr":0.001
+        }
+    },
+    "preprocessing":{
+        "view":["-1","28 * 28"]
+    }
+
+}
