@@ -1,8 +1,11 @@
 {
     "dataset_name":"MNIST",
-    "root_directory":"./",//optional
+    "root_directory":"./",
     "batch_size":"",
     "shuffle":true,
+    "criterion":{
+        "type":"CrossEntropyLoss"
+    },
     "optimizer":{
         "type":"t.optim.Adma",
         "parameter":{

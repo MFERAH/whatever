@@ -1,0 +1,17 @@
+{import_statements}
+
+class {module_name}(nn.Module):
+    def __init__(self):
+        super().__init__()
+{init_snippet}
+            
+    def forward(self, INPUT):
+{forward_snippet}
+
+{training_begin}
+
+{load_dataset}
+{criterion}
+{optimizer}
+{train}
+{test}
